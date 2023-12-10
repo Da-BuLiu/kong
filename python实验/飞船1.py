@@ -43,21 +43,21 @@ exit_button = pygame.Rect(750, 650, 200, 100)  # 退出按钮的位置和大小
 game_over = False
 
 def draw_play_button():
-    pygame.draw.rect(screen, (0, 255, 0), play_button)  # 绘制白色矩形作为按钮
+    pygame.draw.rect(screen, (0, 255, 0), play_button)  # 绘制绿色矩形作为按钮
     font = pygame.font.Font(None, 36)  # 设置字体和大小
     text = font.render("play", True, (0, 0, 0))  # 渲染文字
     text_rect = text.get_rect(center=play_button.center)  # 设置文字位置为按钮中心
     screen.blit(text, text_rect)  # 绘制文字
 
 def draw_newgame_button():
-    pygame.draw.rect(screen, (0, 255, 0), newgame_button)  # 绘制白色矩形作为按钮
+    pygame.draw.rect(screen, (0, 255, 0), newgame_button)  # 绘制绿色矩形作为按钮
     font = pygame.font.Font(None, 36)  # 设置字体和大小
     text = font.render("newgame", True, (0, 0, 0))  # 渲染文字
     text_rect = text.get_rect(center=newgame_button.center)  # 设置文字位置为按钮中心
     screen.blit(text, text_rect)  # 绘制文字
 
 def draw_exit_button():
-    pygame.draw.rect(screen, (0, 255, 0), exit_button)  # 绘制白色矩形作为按钮
+    pygame.draw.rect(screen, (0, 255, 0), exit_button)  # 绘制绿色矩形作为按钮
     font = pygame.font.Font(None, 36)  # 设置字体和大小
     text = font.render("exit", True, (0, 0, 0))  # 渲染文字
     text_rect = text.get_rect(center=exit_button.center)  # 设置文字位置为按钮中心
